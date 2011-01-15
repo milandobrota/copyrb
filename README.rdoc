@@ -7,13 +7,13 @@ This is very useful if you want to transfer ActiveRecord objects from one Rails 
 
 terminal 1:
 
-require 'copyrb'
-a = MyActiveRecord.last
+require 'copyrb'<br>
+a = MyActiveRecord.last<br>
 copy a
 
 terminal 2:
 
-require 'copyrb'
+require 'copyrb'<br>
 paste #=> returns a, now you can do a.save or whatever!
 
 If you don't want to require the gem every time, you can add the following lines to .irbrc
