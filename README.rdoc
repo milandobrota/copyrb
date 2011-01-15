@@ -1,16 +1,25 @@
 = copyrb
 
-Description goes here.
+Ruby objects to go. Copy and paste freely across terminals.
+This is very useful if you want to transfer ActiveRecord objects from one Rails environment to another or from SSH rails console.
 
-== Contributing to copyrb
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+= usage
+
+terminal 1:
+
+require 'copyrb'
+a = MyActiveRecord.last
+copy a
+
+terminal 2:
+
+require 'copyrb'
+paste #=> returns a, now you can do a.save or whatever!
+
+If you don't want to require the gem every time, you can add the following lines to .irbrc
+
+require 'rubygems'
+require 'copyrb'
 
 == Copyright
 
