@@ -1,7 +1,7 @@
 = copyrb
 
 Ruby objects to go. Copy and paste freely across terminals.
-This is very useful if you want to transfer ActiveRecord objects from one Rails environment to another or from SSH rails console.
+This is very useful if you want to transfer ActiveRecord objects from one Rails environment to another (to experiment with production data for example).
 
 = usage
 
